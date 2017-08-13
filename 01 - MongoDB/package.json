@@ -1,0 +1,26 @@
+{
+  "name": "todo-api",
+  "version": "0.1.0",
+  "description": "This is Todo-api",
+  "main": "index.js",
+  "author": "m00p1ng",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js",
+    "start-watch": "nodemon server/index.js",
+    "test": "export NODE_ENV=test && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec yarn test"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.6"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  }
+}
