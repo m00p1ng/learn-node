@@ -1,0 +1,26 @@
+{
+  "name": "socket",
+  "version": "0.1.0",
+  "description": "Socket app",
+  "main": "index.js",
+  "author": "m00p1ng",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/server.js",
+    "start-watch": "nodemon server/server.js",
+    "test": "mocha server/**/*.js",
+    "test-watch": "nodemon --exec yarn test"
+  },
+  "engines": {
+    "node": "8.3.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.5.0"
+  }
+}
